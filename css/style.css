@@ -1,0 +1,911 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+*{
+    margin: 0;
+    padding: 0;
+}
+a,a:hover{
+    text-decoration: none;
+}
+p{
+    line-height: 24px;
+}
+img{
+    vertical-align: middle;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+address,
+figure,
+figcaption {
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: auto;
+}
+ol,
+ul {
+	list-style: none;
+}
+.clear{
+    clear: both;
+}
+/*common css ends*/
+
+/*header_parts start*/
+
+#header_parts{}
+#header_parts .navigation{
+    background: #000; 
+}
+#header_parts .navigation.fixed{  
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:#383232;
+    width: 100%;
+    z-index: 9999;
+}
+#header_parts .navigation nav .navbar-brand{
+  color: #43E97B;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 35px;
+}
+#header_parts .navigation nav .nav-item .nav-link{
+    color: #fff;
+    font-size: 17px;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    position: relative;
+    padding: 0px 30px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+#header_parts .navigation nav .nav-item .nav-link:last-child{
+    padding-right: 0px;
+}
+#header_parts .navigation nav .nav-item .nav-link:after{
+    position: absolute;
+    content: '';
+    width:calc(0% - 15px);
+    height: 2px;
+    background: #43E97B;
+    left: 25px;
+    bottom: 7px;
+    transition: all linear 0.3s;
+}
+#header_parts .navigation nav .nav-item .nav-link:hover:after, #header_parts .navigation nav .nav-item .nav-link.active:after{
+    width:calc(100% - 20px);
+}
+#header_parts .bannar{
+    background: url(../img/pic-1.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#header_parts .bannar .ovarley{
+    background:rgba(0, 0, 0, 0.90);
+    height: 100vh;
+    position: relative;
+
+}
+#header_parts .bannar .ovarley .row{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+#header_parts .bannar .ovarley .div h5{
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+#header_parts .bannar .ovarley .div h2{
+    color:#fff;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif; 
+}
+#header_parts .bannar .ovarley .div p{
+    color:#43E97B;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif; 
+    display: inline-block;
+}
+#header_parts .bannar .ovarley .div span{
+    color: #fff;
+}
+#header_parts .bannar .ovarley .div a{
+    margin-top: 25px;
+    display: inline-block;
+    padding: 15px 40px;
+    background: #000;
+    color: #43E97B;
+    font-size: 19px;
+    border: 1px solid #43E97B;   
+    font-weight: 600;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    -m0z-transition: all linear 0.3s;
+}
+#header_parts .bannar .ovarley .div a:hover{
+    background: #43E97B;
+    color: #fff;
+}
+/*header_parts ends*/
+/*about_parts start*/
+#about_parts{
+    background: #2E2E2E;
+    padding-top: 30px;
+}
+#about_parts .about{
+    background: #2E2E2E;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#about_parts .about .one h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 15px;
+}
+#about_parts .about .one span{
+    color: #43E97B;
+}
+#about_parts .about .one p{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 10px;
+    font-weight: 300;
+}
+#about_parts .about .two{
+    margin-top: 50px;
+}
+#about_parts .about .two p{
+    color: #979797;
+    font-size: 17px;
+    font-weight: 300;
+    text-align: justify;
+}
+#about_parts .about .two i{
+    margin-top: 35px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #fff;
+    color: #000;
+    border-radius: 50%;
+    margin-right: 15px;  
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+}
+#about_parts .about .two i:hover{
+    background: #3FC260;
+    color: #fff;
+}
+#about_parts .about .two .cnt{
+    margin-top:35px;
+}
+#about_parts .about .two .cnt a{
+    display: inline-block;
+    padding: 10px 25px;
+    background: #3FC260;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 2px;   
+     transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+}
+#about_parts .about .two .cnt a:hover{
+    background: #fff;
+    color: #3FC260;
+}
+#about_parts .about .three{
+    padding-top: 57px;
+}
+/*about parts ends*/
+/*skill parts start*/
+
+#skill_parts{
+    background: #000;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#skill_parts .skill .one{
+    padding-bottom: 50px;
+}
+#skill_parts .skill h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 15px;
+}
+#skill_parts .skill span{
+     color: #43E97B;
+}
+#skill_parts .skill p{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 10px;
+    font-weight: 300;
+}
+#skill_parts .skill .two h2{
+    font-size: 35px;
+    font-weight: 400;
+    padding-bottom: 35px;
+}
+#skill_parts .skill .two p{
+    padding-bottom: 30px;
+    color: #979797;
+}
+
+#skill_parts .skill .two .skill_averag ul li{
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    width: 557px;
+    list-style: none;
+    position: relative;
+    margin-bottom: 37px;
+}
+#skill_parts .skill .two .skill_averag ul li:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: calc(100% + 10px);
+    width: 100%;
+    height: 15px;
+    background-color: rgba(46, 46, 46, .5);
+    border-radius: 1000px;
+}
+#skill_parts .skill .two .skill_averag ul li:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: calc(100% + 10px);
+    width: 23px;
+    height: 15px;
+    background-color:rgba(67, 233, 123, .90);
+    border-radius: 1000px;
+    animation-duration: 0.7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+#skill_parts .skill .two .skill_averag ul li.html:after{
+    animation-name: html;
+}
+@keyframes html{
+    to{
+        width: 95%;
+    }
+}
+#skill_parts .skill .two .skill_averag ul li.css:after{
+    animation-name: css;
+}
+@keyframes css{
+    to{
+        width: 85%;
+    }
+}
+#skill_parts .skill .two .skill_averag ul li.jq:after{
+    animation-name: jq;
+}
+@keyframes jq{
+    to{
+        width: 70%;
+    }
+}
+#skill_parts .skill .two .skill_averag ul li.js:after{
+    animation-name: js;
+}
+@keyframes js{
+    to{
+        width: 60%;
+    }
+}
+#skill_parts .skill .two .skill_averag ul li.bs:after{
+    animation-name: bs;
+}
+@keyframes bs{
+    to{
+        width: 50%;
+    }
+}
+/*skill parts ends*/
+/*servics_parts start*/
+
+#servics_parts{
+    background: #202020;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#servics_parts .servics  .one{
+    padding-bottom: 50px;
+}
+#servics_parts .servics .one h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 15px;
+}
+#servics_parts .servics .one span{
+     color: #43E97B;
+}
+#servics_parts .servics .one p{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+}
+#servics_parts .servics .div{
+    background: #252525;
+    color: #979797;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+}
+#servics_parts .servics .div:hover{
+    box-shadow: 0px 1px 8px 3px #000;
+}
+#servics_parts .servics .div .design{
+    padding:50px 5px;
+}
+#servics_parts .servics .div .design i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 1px solid #979797;
+    margin-bottom: 20px;
+    
+    transition: all linear .3s; 
+    -webkit-transition: all linear .3s; 
+    -o-transition: all linear .3s; 
+    -moz-transition: all linear .3s;
+   
+}
+#servics_parts .servics .div .design h2{
+    font-size: 20px;
+    margin-bottom: 40px;
+    position: relative; 
+    text-transform: uppercase;
+}
+#servics_parts .servics .div .design h2:after{
+    position: absolute;
+    content: '';
+    width: 70px;
+    height: 2px;
+    background: #fff;
+    left: 90px;
+    top: 40px;
+}
+#servics_parts .servics .div .design p{
+    font-size: 17px;
+}
+#servics_parts .servics .div .design:hover i{
+    border: 1px solid #979797;
+    color: #fff;
+    background: #202020;  
+}
+#servics_parts .servics .div .design:hover{
+
+}
+/*servics_parts ends*/
+
+/*counter parts start*/
+#counter_parts {
+    background: url(../img/counter-bg.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    z-index: 1;
+}
+#counter_parts .overlay{
+    background: rgba(0, 0, 0, 0.80);
+    width: 100%;
+    height: 100%;
+}
+#counter_parts .overlay .counter-inner{
+    color: #979797;
+    margin-top: 70px;
+}
+#counter_parts .overlay .counter-inner p{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+
+}
+#counter_parts .overlay .counter-inner h2{
+    font-size: 45px;
+    color: #43E97B;
+}
+#counter_parts .overlay .counter-inner i{
+    color:#979797;
+    font-size: 60px;
+    padding-bottom: 10px;
+}
+/*counter parts ends*/
+/*portfolio parts ends*/
+
+#portfolio_parts{
+    background: #202020;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#portfolio_parts .portfolio .one{
+    padding-bottom: 50px;
+}
+#portfolio_parts .portfolio .one h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 15px;
+}
+#portfolio_parts .portfolio .one span{
+    color: #43E97B;
+}
+#portfolio_parts .portfolio .one p{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+}
+#portfolio_parts .portfolio .item{
+    margin-bottom: 30px;
+}
+#portfolio_parts .portfolio .item .works{
+    position: relative;
+    margin-bottom: 28px;
+}
+#portfolio_parts .portfolio .item .works .ovarlay{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.90);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all linear 0.3s;
+}
+#portfolio_parts .portfolio .item .works .ovarlay:hover{
+    opacity: 1;
+    border: 5px solid #43E97B;
+}
+#portfolio_parts .portfolio .item .works .ovarlay i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 25px;
+    color: #fff;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    
+}
+#portfolio_parts .portfolio .item .works .ovarlay h4{
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+/*portfolio parts ends*/
+
+/*testimonial parts start*/
+
+#Testimonial_parts{
+    background: #000;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#Testimonial_parts .testimonial{
+    position: relative;
+}
+#Testimonial_parts .testimonial h2{
+    color: #43E97B;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 15px;
+}
+#Testimonial_parts .testimonial p{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+#Testimonial_parts .testimonial .team{
+    background: #202020;
+    margin-top: 100px;
+    text-align: center;
+}
+#Testimonial_parts .testimonial .team img{
+    border-radius: 50px;
+    margin-top: -41px;
+    display: inline-block;
+}
+#Testimonial_parts .testimonial .team i{
+    padding-top: 25px;
+    padding-bottom: 15px;
+    color: #43E97B;
+}
+#Testimonial_parts .testimonial .team h3{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 15px;
+}
+#Testimonial_parts .testimonial .team p{
+    font-size: 18px;
+    text-align: justify;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    color: #979797;
+}
+#Testimonial_parts .testimonial ul.slick-dots{
+    position: absolute;
+    display: flex;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+#Testimonial_parts .testimonial ul.slick-dots li button{
+    font-size: 0px;
+    width: 15px;
+    height: 15px;
+    margin: 0 8px;
+    border: 2px solid #fff;
+   
+}
+#Testimonial_parts .testimonial ul.slick-dots li.slick-active button{
+    background: #43E97B;
+    border: 2px solid #43E97B;
+    outline: 0px;
+}
+/*testimonial parts end*/
+/*contact parts start*/
+
+#contact_parts{
+    background: #202020;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#contact_parts .contact .one{
+    padding-bottom: 50px;
+}
+#contact_parts .contact .one h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 15px;
+}
+#contact_parts .contact .one span{
+    color: #43E97B;
+}
+#contact_parts .contact .one p{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+}
+#contact_parts .contact .massage{
+    background: #252525;
+    color: #979797;
+}
+#contact_parts .contact .massage i{
+    font-size: 60px;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    color: #43E97B;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+}
+#contact_parts .contact .massage:hover i{
+    color: #fff;
+    transform: rotate(45deg);
+}
+#contact_parts .contact .massage h3{
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+#contact_parts .contact .massage p{
+    padding-bottom: 40px;
+}
+#contact_parts .contact .form{
+    background: #252525;
+    margin-top: 40px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+#contact_parts .contact .form input{
+    margin: 15px;
+    height: 50px;
+    background: #1B1C1E;
+    border: #1B1C1E;
+    width: 510px;
+    border-radius: 8px;
+    color: #fff;
+    padding-left: 15px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+#contact_parts .contact .form .sub{
+    width: 1080px;
+
+}
+#contact_parts .contact .form .msg{
+    width: 1080px;
+    height: 300px;
+    border-radius: 8px;
+    margin-left: 15px;
+    margin-top: 19px;
+    padding: 26px 14px;
+    background: #1B1C1E;
+    color: #fff;
+    border: #1B1C1E;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    resize: none;
+}
+#contact_parts .contact .form a{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: inline-block;
+    background: #000;
+    padding: 15px 22px;
+    font-size: 20px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    margin-left: 15px;
+    border: 1px solid #43E97B;
+    color: #43E97B;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+}
+#contact_parts .contact .form a:hover{
+    background: #43E97B;
+    color: #fff;
+}
+/*contact parts ends*/
+/*foter parts start*/
+
+
+#foter_parts{
+    background: #000;
+}
+#foter_parts .foter{
+    padding: 20px 0px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+#foter_parts .foter span{
+    color:#43E97B; 
+}
+/*foter parts ends*/
+
+.top_to{
+    width: 50px;
+    height: 50px;
+    background: #383232;
+    right: 20px;
+    bottom: 50px;
+    position: fixed;
+    line-height: 50px;
+    font-size: 30px;
+    color: #979797;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    
+}
+/*top_to end*/
+
+@media(min-width:992px) and (max-width:1199px){
+    #skill_parts .skill .two .skill_averag ul li{
+        width: 470px;
+    }
+    #contact_parts .contact .form input{
+        width: 430px;
+    }
+    #contact_parts .contact .form .sub{
+        width: 910px;
+    }
+    #contact_parts .contact .form .msg{
+        width: 910px; 
+    }
+}
+
+@media(min-width:768px) and (max-width:991px){
+    #header_parts .bannar .ovarley .div h5{
+        font-size: 17px;
+    }
+    #header_parts .bannar .ovarley .div h2{
+        font-size: 28px;
+    }
+    #header_parts .bannar .ovarley .div a{
+        padding: 13px 32px;
+    }
+    #about_parts .about{
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+    #about_parts .about .two{
+        margin-top: 35px;
+    }
+    #about_parts .about .two p{
+        font-size: 16px;
+    }
+    #about_parts .about .two i{
+        margin-top: 20px;
+    }
+    #about_parts .about .three{
+        padding-top: 35px;
+    }
+    #skill_parts{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    #skill_parts .skill .two h2{
+        font-size: 34px;
+    }
+    #servics_parts{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    #servics_parts .servics .div{
+        margin-bottom: 30px;
+    }
+    #servics_parts .servics .div .design h2::after{
+        left: 125px;
+    }
+    #counter_parts .overlay .counter-inner i{
+        font-size: 55px;
+    }
+    #counter_parts .overlay .counter-inner h2{
+        font-size: 41px;
+    }
+    #counter_parts .overlay .counter-inner p{
+        font-size: 23px;
+    }
+    #portfolio_parts{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #Testimonial_parts{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #contact_parts .contact .massage{
+        margin-bottom: 30px;
+    }
+    #contact_parts .contact .form input{
+        width: 660px;
+    }
+    #contact_parts .contact .form .sub{
+        width: 660px;
+    }
+    #contact_parts .contact .form .msg{
+        width: 660px;
+    }
+    #contact_parts .contact .form a{
+        margin-top: 30px;
+        margin-bottom: 5px;
+        padding: 13px 15px;
+        font-size: 18px;
+        
+    }
+}
+@media(min-width:576px) and (max-width:767px){}
+@media(min-width:320px) and (max-width:575px){
+    #counter_parts{
+        height: auto;
+    }  
+    #header_parts .bannar .ovarley .div h2{
+        letter-spacing: 2px;
+    }
+    #header_parts .bannar .ovarley .div p{
+        color: #43E97B;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        display: inline-block;
+        font-size: 17px;
+    }
+    #header_parts .bannar .ovarley .div h5{
+        font-size: 15px;
+    }
+    #contact_parts .contact .form input{
+        width: 275px;
+    }
+    #contact_parts .contact .form .sub{
+        width: 275px;
+    }
+    #contact_parts .contact .form .msg{
+        width: 275px;
+    }
+    #skill_parts .skill .two .skill_averag ul li{
+        width: 275px;
+    }
+    .navbar-light .navbar-toggler{
+        border: 2px solid #43E97B;
+    }
+    #servics_parts .servics .div{
+        margin-bottom: 18px;
+    }
+    #contact_parts .contact .massage{
+        border-bottom: 1px solid #000;
+    }
+    #counter_parts .overlay{
+        padding: 60px 0px;
+    }
+    #counter_parts .overlay .counter-inner{
+        margin-top: 40px;
+    }
+   
+}
+
+
+
+
